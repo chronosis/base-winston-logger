@@ -3,11 +3,15 @@ An example of using and setting up Winston multi-logging
 
 The `logger.js` exports a Logger class which, when instantiated, creates three separate logging streams each with their own options.
 
-- logger.log -- basic logger
-- logger.requestLog -- requires logger
-- logger.sqlLog -- sql logger
+| Type | Logger Property |
+|------|-----------------|
+| Basic / Application logging | `logger.log` |
+| Request logging | `logger.requestLog` |
+| SQL/DB logging | `logger.sqlLog` |
 
-This is configured to use the `winston3-logstash-transport` where each of the loggers above can export the logs to a separate logging configuration found in `config.js`
+By default the Basic logger is set to output to file, console and logstash; while the other two loggers are set to console and the logstash transport, so no files are generated.
+
+The logstash transports are configured to use the `winston3-logstash-transport` module where each of the loggers above can export the logs to a separate logging configuration found in `config.js`
 
 For example on how transports work see -- https://www.npmjs.com/package/winston3-logstash-transport
 
