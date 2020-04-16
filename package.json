@@ -1,0 +1,27 @@
+{
+  "name": "base-winston-logger",
+  "version": "1.0.0",
+  "description": "An example of using and setting up Winston multi-logging",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chronosis/base-winston-logger.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chronosis/base-winston-logger/issues"
+  },
+  "homepage": "https://github.com/chronosis/base-winston-logger#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "uuid": "^7.0.3",
+    "winston": "^3.2.1",
+    "winston3-logstash-transport": "^1.0.1-c",
+    "x2js": "^3.4.0"
+  }
+}
